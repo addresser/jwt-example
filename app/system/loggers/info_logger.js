@@ -4,7 +4,7 @@ module.exports = (winston, winstonFastRabbitMQ, loggerConfig) => {
     level: 'info',
     format: winston.format.json(),
     transports: [
-      new winstonFastRabbitMQ(loggerConfig.infoAMQP),
+      new winstonFastRabbitMQ(loggerConfig),
     ],
     exitOnError: false,
   });
