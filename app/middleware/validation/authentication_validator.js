@@ -11,14 +11,10 @@ module.exports = (stampit, User, validator, validateMessages, registrationValida
             [path]: value,
           });
 
-          if(user) {
-            let resultVerification = user.verifyPassword(req.body.password);
+          if(!user) return false;
 
-            return resultVerification;
-          } else {
-            return false
-          }
-        }).withMessage(validateMessages.dataNotFound),
+          return user.verifyPasswordSync(req.body.password);
+        }).withMessage(validateMessages.dataFound),
     }
   });
 };
