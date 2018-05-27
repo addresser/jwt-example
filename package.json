@@ -1,0 +1,40 @@
+{
+  "name": "jwt.service",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dizzy": "^2.2.3",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-validator": "^5.1.2",
+    "helmet": "^3.12.0",
+    "http-errors": "^1.6.3",
+    "jsonwebtoken": "^8.2.0",
+    "moment": "^2.22.1",
+    "mongoose": "^4.13.12",
+    "mongoose-bcrypt": "^1.5.1",
+    "mongoose-hidden": "^1.5.3",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "stampit": "^4.1.1",
+    "use-strict": "^1.0.1",
+    "winston": "^3.0.0-rc5",
+    "winston-fast-rabbitmq": "^2.2.0"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-jasmine": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-nodemon": "^2.2.1",
+    "jasmine": "^3.1.0",
+    "jasmine-expect": "^3.8.3",
+    "jasmine-matchers": "^0.2.3",
+    "node-mocks-http": "^1.5.8",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
